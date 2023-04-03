@@ -1,0 +1,35 @@
+<library path="lib/libtrack_and_chase">
+
+  <class name="track_and_chase/blob_detector"
+	 type="track_and_chase::BlobDetectorNodelet"
+	 base_class_type="nodelet::Nodelet">
+    <description>
+      Publishes detection of mouse
+    </description>
+  </class>
+
+  <class name="track_and_chase/pose_estimator"
+	 type="track_and_chase::PoseEstimatorNodelet"
+	 base_class_type="nodelet::Nodelet">
+    <description>
+      estimated location of mouse
+    </description>
+  </class>
+
+    <class name="track_and_chase/display_output"
+	 type="track_and_chase::DisplayNodelet"
+	 base_class_type="nodelet::Nodelet">
+    <description>
+      displays all output
+    </description>
+  </class>
+
+    <class name="track_and_chase/chase_planner"
+	 type="track_and_chase::ChasePlannerNodelet"
+	 base_class_type="nodelet::Nodelet">
+    <description>
+      chase planner and controller
+    </description>
+  </class>
+
+</library>
